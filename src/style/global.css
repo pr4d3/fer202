@@ -1,0 +1,196 @@
+/* ==========================================================================
+   DESIGN TOKENS - MUJI DESIGN SYSTEM
+   Japanese-goods store: kraft paper, charcoal stamp, muted red.
+   Characteristics: High contrast neutrals, flat design (no gradients),
+   minimal border radii (1-3px), single accent tertiary color (#A94033).
+   ========================================================================== */
+
+:root {
+  /* 1. Muji Core Palette */
+  --muji-primary: #231F1A;     /* Headlines & core text (charcoal stamp) */
+  --muji-secondary: #8B8278;   /* Borders, captions, metadata */
+  --muji-tertiary: #A94033;    /* The sole driver for interaction (muted red) */
+  --muji-neutral: #E5DCC8;     /* The page foundation (kraft paper) */
+  --muji-surface: #EEE4CF;     /* Card surface, containers */
+  --muji-on-primary: #EEE4CF;  /* Text on primary/tertiary buttons */
+
+  /* 2. Light Theme (Muji Authentic Paper Mode) */
+  --bg-body-light: var(--muji-neutral);
+  --bg-surface-light: var(--muji-surface);
+  --bg-subtle-light: #DFD5C0;
+  --text-main-light: var(--muji-primary);
+  --text-muted-light: var(--muji-secondary);
+  --border-color-light: var(--muji-secondary);
+  --border-subtle-light: rgba(139, 130, 120, 0.3);
+
+  /* 3. Dark Theme (Muji Ink/Charcoal Mode) */
+  --bg-body-dark: #1A1714;
+  --bg-surface-dark: #231F1A;
+  --bg-subtle-dark: #2E2923;
+  --text-main-dark: #EEE4CF;
+  --text-muted-dark: #8B8278;
+  --border-color-dark: #3F3931;
+  --border-subtle-dark: rgba(139, 130, 120, 0.2);
+
+  /* 4. Active Theme Semantic Mapping (Default: Light/Paper) */
+  --bg-body: var(--bg-body-light);
+  --bg-surface: var(--bg-surface-light);
+  --bg-subtle: var(--bg-subtle-light);
+  --text-main: var(--text-main-light);
+  --text-muted: var(--text-muted-light);
+  --border-color: var(--border-color-light);
+  --border-subtle: var(--border-subtle-light);
+
+  /* 5. Typography (Noto Sans JP) */
+  --font-family-base: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --font-size-display: 3.5rem;
+  --font-weight-display: 500;
+  --letter-spacing-display: -0.01em;
+
+  --font-size-h1: 1.95rem;
+  --font-weight-h1: 500;
+
+  --font-size-body: 0.95rem;
+  --line-height-body: 1.7;
+
+  --font-size-label: 0.72rem;
+  --letter-spacing-label: 0.14em;
+
+  /* Helper standard font sizes */
+  --font-size-xs: 0.72rem;
+  --font-size-sm: 0.85rem;
+  --font-size-base: 0.95rem;
+  --font-size-lg: 1.15rem;
+  --font-size-xl: 1.4rem;
+
+  /* 6. Spacing Scale (Muji system) */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+
+  /* 7. Rounded Scale (Muji: Crisp, flat, minimal radius) */
+  --rounded-sm: 1px;
+  --rounded-md: 2px;
+  --rounded-lg: 3px;
+  --rounded-pill: 2px; /* Muji uses crisp geometric edges */
+
+  /* 8. Shadows (Muji: Flat on purpose, subtle elevation) */
+  --shadow-none: none;
+  --shadow-sm: 0 1px 2px rgba(35, 31, 26, 0.05);
+  --shadow-md: 0 2px 6px rgba(35, 31, 26, 0.08);
+  --shadow-lg: 0 4px 12px rgba(35, 31, 26, 0.12);
+
+  /* 9. Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+
+  /* 10. Z-Index Scale */
+  --z-badge: 10;
+  --z-navbar: 100;
+  --z-modal: 1050;
+}
+
+/* Theme switching bindings */
+[data-bs-theme="light"], body.light-theme {
+  --bg-body: var(--bg-body-light);
+  --bg-surface: var(--bg-surface-light);
+  --bg-subtle: var(--bg-subtle-light);
+  --text-main: var(--text-main-light);
+  --text-muted: var(--text-muted-light);
+  --border-color: var(--border-color-light);
+  --border-subtle: var(--border-subtle-light);
+}
+
+[data-bs-theme="dark"], body.dark-theme {
+  --bg-body: var(--bg-body-dark);
+  --bg-surface: var(--bg-surface-dark);
+  --bg-subtle: var(--bg-subtle-dark);
+  --text-main: var(--text-main-dark);
+  --text-muted: var(--text-muted-dark);
+  --border-color: var(--border-color-dark);
+  --border-subtle: var(--border-subtle-dark);
+}
+
+/* ==========================================================================
+   GLOBAL BASE STYLES
+   ========================================================================== */
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  min-height: 100vh;
+  margin: 0;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+h1, .h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.display-title {
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-display);
+  letter-spacing: var(--letter-spacing-display);
+  line-height: 1.15;
+}
+
+.muji-label {
+  font-size: var(--font-size-label);
+  letter-spacing: var(--letter-spacing-label);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-main);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--muji-tertiary);
+}
+
+/* Primary Button Muji Spec: background tertiary, text on-primary, rounded md */
+.btn-muji-primary {
+  background-color: var(--muji-tertiary);
+  color: var(--muji-on-primary);
+  border: 1px solid var(--muji-tertiary);
+  border-radius: var(--rounded-md);
+  padding: 10px 20px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: opacity var(--transition-fast), background-color var(--transition-fast);
+}
+
+.btn-muji-primary:hover {
+  background-color: #8E3429;
+  border-color: #8E3429;
+  color: var(--muji-on-primary);
+}
+
+/* Secondary Button Muji */
+.btn-muji-secondary {
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--rounded-md);
+  padding: 10px 18px;
+  font-size: var(--font-size-sm);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.btn-muji-secondary:hover {
+  background-color: var(--bg-subtle);
+  color: var(--text-main);
+  border-color: var(--text-main);
+}

@@ -1,0 +1,118 @@
+/* Orchid Card Component Styles - Muji Design System */
+.orchid-card {
+  transition: transform var(--transition-normal), border-color var(--transition-normal);
+  border-radius: var(--rounded-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  box-shadow: none; /* Muji is flat on purpose */
+}
+
+.orchid-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--muji-primary);
+}
+
+/* Badges on Top of Image */
+.orchid-badges {
+  position: absolute;
+  top: var(--spacing-sm);
+  left: var(--spacing-sm);
+  z-index: var(--z-badge);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.orchid-badges .badge {
+  border-radius: var(--rounded-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+
+/* Badge Natural: understated charcoal/secondary */
+.badge-natural {
+  background-color: var(--muji-primary);
+  color: var(--muji-on-primary);
+}
+
+/* Badge Special: subtle muted border */
+.badge-special {
+  background-color: var(--bg-surface);
+  color: var(--muji-tertiary);
+  border: 1px solid var(--muji-tertiary);
+}
+
+/* Image Container & Hover Zoom */
+.orchid-img-wrapper {
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.orchid-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.orchid-card:hover .orchid-img {
+  transform: scale(1.03);
+}
+
+/* Card Body */
+.orchid-card .card-body {
+  padding: 16px;
+  background-color: var(--bg-surface);
+}
+
+.orchid-card .card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+/* Rating Stars */
+.star-filled {
+  color: var(--muji-primary); /* Muji uses charcoal/primary for clean aesthetic */
+}
+
+.star-empty {
+  color: var(--muji-secondary);
+  opacity: 0.35;
+}
+
+/* Like Counter */
+.orchid-like {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+}
+
+/* Action button inside card */
+.orchid-card .btn-detail {
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--rounded-md);
+  padding: 6px 14px;
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all var(--transition-fast);
+}
+
+.orchid-card .btn-detail:hover {
+  background-color: var(--muji-tertiary);
+  border-color: var(--muji-tertiary);
+  color: var(--muji-on-primary);
+}
