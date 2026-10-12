@@ -9,8 +9,8 @@ export default function App() {
       {/* Header & Nút Chuyển Đổi Giao Diện */}
       <header className="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
         <div>
-          <span className="muji-label d-block mb-1">BỘ SƯU TẬP THỰC VẬT HỌC</span>
-          <h1 className="mb-1">Bộ Sưu Tập Hoa Lan</h1>
+          <span className="muji-label d-block mb-1">BỘ SƯU TẬP LAN</span>
+          <h1 className="mb-1">LAN CHƯA ĐỘT BIẾN</h1>
           <p className="text-muted mb-0 small">
             Khám phá 16 giống hoa lan quý hiếm và đặc hữu tự nhiên
           </p>
