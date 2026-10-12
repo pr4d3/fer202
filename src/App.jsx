@@ -1,22 +1,10 @@
-import Home from "./pages/Home/Home.jsx";
-import Product from "./pages/Product/Product.jsx";
-import NotFound from "./pages/NotFound/NotFound.jsx";
-import { Route, Routes } from "react-router";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MyNavbar from "./components/MyNavbar.jsx";
 
 export default function App() {
   return (
-    <>
-      {/* <MyNavbar /> */}
-          
-      <Routes>
-        <Route element={<MyNavbar />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-    </>
+    <div className="container py-4">
+      <h1 className="fw-bold">FER202 - Lab 1 & 2</h1>
+      <p className="text-muted">Môi trường sạch sẵn sàng để build từ đầu.</p>
+    </div>
   );
 }
