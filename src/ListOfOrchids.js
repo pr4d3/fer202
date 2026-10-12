@@ -6,9 +6,9 @@ const ListOfOrchids = [
     isSpecial: true,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Paphiopedilum_rothschildianum_%2825834537567%29.jpg/500px-Paphiopedilum_rothschildianum_%2825834537567%29.jpg",
-    color: "Yellow-Green with Maroon Stripes",
+    color: "Vàng xanh sọc hạt dẻ",
     like: 285,
-    from: "Borneo",
+    from: "Đảo Borneo",
     type: "Paphiopedilum"
   },
   {
@@ -18,7 +18,7 @@ const ListOfOrchids = [
     isSpecial: true,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Cattleya_labiata.jpg/500px-Cattleya_labiata.jpg",
-    color: "Lilac and Magenta",
+    color: "Hồng tím và đỏ thẫm",
     like: 240,
     from: "Brazil",
     type: "Cattleya"
@@ -30,7 +30,7 @@ const ListOfOrchids = [
     isSpecial: false,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Phalaenopsis_amabilis_Orchi_03.jpg/500px-Phalaenopsis_amabilis_Orchi_03.jpg",
-    color: "Pure White",
+    color: "Trắng tinh khiết",
     like: 220,
     from: "Indonesia",
     type: "Phalaenopsis"
@@ -42,9 +42,9 @@ const ListOfOrchids = [
     isSpecial: true,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Vanda_coerulea_%282943608475%29.jpg/500px-Vanda_coerulea_%282943608475%29.jpg",
-    color: "Blue-Violet",
+    color: "Xanh lam tím",
     like: 275,
-    from: "India",
+    from: "Ấn Độ",
     type: "Vanda"
   },
   {
@@ -54,9 +54,9 @@ const ListOfOrchids = [
     isSpecial: false,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Dendrobium_nobile_-_flower_view_01.jpg/500px-Dendrobium_nobile_-_flower_view_01.jpg",
-    color: "Pink and White",
+    color: "Hồng phớt viền trắng",
     like: 195,
-    from: "Himalayas",
+    from: "Dãy Himalaya",
     type: "Dendrobium"
   },
   {
@@ -66,7 +66,7 @@ const ListOfOrchids = [
     isSpecial: false,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Oncidium_sphacelatum03.jpg/500px-Oncidium_sphacelatum03.jpg",
-    color: "Yellow and Brown",
+    color: "Vàng đốm nâu",
     like: 180,
     from: "Mexico",
     type: "Oncidium"
@@ -78,9 +78,9 @@ const ListOfOrchids = [
     isSpecial: false,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Cymbidium_aloifolium1.jpg/500px-Cymbidium_aloifolium1.jpg",
-    color: "Pale Yellow with Red Stripes",
+    color: "Vàng nhạt sọc đỏ",
     like: 165,
-    from: "Southeast Asia",
+    from: "Đông Nam Á",
     type: "Cymbidium"
   },
   {
@@ -90,7 +90,7 @@ const ListOfOrchids = [
     isSpecial: true,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Vanilla_planifolia_1.jpg/500px-Vanilla_planifolia_1.jpg",
-    color: "Greenish-Yellow",
+    color: "Vàng lục nhạt",
     like: 210,
     from: "Mexico",
     type: "Vanilla"
@@ -102,7 +102,7 @@ const ListOfOrchids = [
     isSpecial: true,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Peristeria_elata_Orchi_11.jpg/500px-Peristeria_elata_Orchi_11.jpg",
-    color: "Ivory White",
+    color: "Trắng ngà bồ câu",
     like: 290,
     from: "Panama",
     type: "Peristeria"
@@ -114,7 +114,7 @@ const ListOfOrchids = [
     isSpecial: true,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Angraecum_sesquipedale_Orchi_4.jpg/500px-Angraecum_sesquipedale_Orchi_4.jpg",
-    color: "Creamy White",
+    color: "Trắng kem hình sao",
     like: 260,
     from: "Madagascar",
     type: "Angraecum"
@@ -126,7 +126,7 @@ const ListOfOrchids = [
     isSpecial: false,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Miltoniopsis_vexillaria.jpg/500px-Miltoniopsis_vexillaria.jpg",
-    color: "Pink and White",
+    color: "Hồng cánh bướm",
     like: 175,
     from: "Colombia",
     type: "Miltoniopsis"
@@ -138,9 +138,9 @@ const ListOfOrchids = [
     isSpecial: true,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rhynchostylis_gigantea.jpg/500px-Rhynchostylis_gigantea.jpg",
-    color: "White and Magenta Spotted",
+    color: "Trắng đốm tím thẫm",
     like: 250,
-    from: "Thailand",
+    from: "Thái Lan",
     type: "Rhynchostylis"
   },
   {
@@ -150,9 +150,9 @@ const ListOfOrchids = [
     isSpecial: false,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coelogyne_cristata_Orchi_103.jpg/500px-Coelogyne_cristata_Orchi_103.jpg",
-    color: "Snow White with Yellow Center",
+    color: "Trắng tuyết nhụy vàng",
     like: 190,
-    from: "Himalayas",
+    from: "Dãy Himalaya",
     type: "Coelogyne"
   },
   {
@@ -162,9 +162,9 @@ const ListOfOrchids = [
     isSpecial: false,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Epidendrum_radicans.jpg/500px-Epidendrum_radicans.jpg",
-    color: "Orange-Red",
+    color: "Cam rực lửa",
     like: 155,
-    from: "Central America",
+    from: "Trung Mỹ",
     type: "Epidendrum"
   },
   {
@@ -174,7 +174,7 @@ const ListOfOrchids = [
     isSpecial: true,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lycaste_skinneri_1.jpg/500px-Lycaste_skinneri_1.jpg",
-    color: "Soft Pink and White",
+    color: "Hồng phấn dịu",
     like: 235,
     from: "Guatemala",
     type: "Lycaste"
@@ -186,9 +186,9 @@ const ListOfOrchids = [
     isSpecial: true,
     isNatural: true,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flower_of_Grammatophyllum_speciosum_130mm.jpg/500px-Flower_of_Grammatophyllum_speciosum_130mm.jpg",
-    color: "Yellow with Maroon Spots",
+    color: "Vàng đốm hổ báo",
     like: 270,
-    from: "Southeast Asia",
+    from: "Đông Nam Á",
     type: "Grammatophyllum"
   }
 ];

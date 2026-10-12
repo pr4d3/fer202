@@ -33,7 +33,7 @@ export default function Modal({ show, onHide, orchid }) {
           <span>{name}</span>
           {isSpecial && (
             <span className="badge badge-special fs-6 py-1 px-2">
-              Special
+              Đặc biệt
             </span>
           )}
         </BSModal.Title>

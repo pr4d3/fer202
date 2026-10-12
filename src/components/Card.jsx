@@ -37,11 +37,11 @@ export default function Card({ orchid, onSelectOrchid }) {
       <div className="orchid-badges">
         {isSpecial && (
           <span className="badge badge-special">
-            Special
+            Đặc biệt
           </span>
         )}
         <span className={`badge ${isNatural ? "badge-natural" : "badge-natural opacity-75"}`}>
-          {isNatural ? "Natural" : "Hybrid"}
+          {isNatural ? "Tự nhiên" : "Lai tạo"}
         </span>
       </div>
 
@@ -79,7 +79,7 @@ export default function Card({ orchid, onSelectOrchid }) {
         {/* Color and Rating */}
         <div className="d-flex justify-content-between align-items-center mb-3">
           <small className="text-muted">
-            Color: <strong>{color}</strong>
+            Màu: <strong>{color}</strong>
           </small>
           <Rating value={rating} />
         </div>
@@ -87,13 +87,13 @@ export default function Card({ orchid, onSelectOrchid }) {
         {/* Footer actions: Likes and Detail button */}
         <div className="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
           <span className="orchid-like">
-            ❤️ {like} likes
+            ❤️ {like} lượt thích
           </span>
           <button
             onClick={() => onSelectOrchid?.(orchid)}
             className="btn btn-detail"
           >
-            Detail
+            Chi tiết
           </button>
         </div>
       </div>
